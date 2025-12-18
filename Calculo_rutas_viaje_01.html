@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99c011de143313772340a9f52e73ce11 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h3 style="text-align:center; font-size:16px; font-weight:bold;">Viaje 1 - Carga: 743.00 kg / 800.0 kg</h3><p style="text-align:center; font-size:12px;">Distancia: 16.74 km | Carga: 743.00 kg / 800.0 kg | Puntos: 11 clientes</p>
+    
+            <div class="folium-map" id="map_99c011de143313772340a9f52e73ce11" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_99c011de143313772340a9f52e73ce11 = L.map(
+                "map_99c011de143313772340a9f52e73ce11",
+                {
+                    center: [10.94383776923077, -74.78692761538461],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dfe203239dd36ae0441e1f04eac8727a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dfe203239dd36ae0441e1f04eac8727a.addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var poly_line_40dee61a2389a632525cde9a9bf2cce1 = L.polyline(
+                [[10.955605, -74.786422], [10.955562, -74.786436], [10.955333, -74.786512], [10.955198, -74.786552], [10.954719, -74.786654], [10.954396, -74.786697], [10.95405, -74.786718], [10.95382, -74.786718], [10.953557, -74.786706], [10.953172, -74.786674], [10.952779, -74.786594], [10.952368, -74.78648], [10.952284, -74.786454], [10.952182, -74.786422], [10.951982, -74.786366], [10.951575, -74.786249], [10.951522, -74.786234], [10.951587, -74.786005], [10.951641, -74.786024], [10.951815, -74.786082], [10.951834, -74.786028], [10.951869, -74.785929], [10.951953, -74.785769], [10.95209, -74.785511], [10.952146, -74.78529]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_57619c003aef3a02ac0df725babe1634 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2413c3f7f691e83794981145571634d8 = $(`<div id="html_2413c3f7f691e83794981145571634d8" style="width: 100.0%; height: 100.0%;">Bodega Transportador → Cliente 46</div>`)[0];
+                popup_57619c003aef3a02ac0df725babe1634.setContent(html_2413c3f7f691e83794981145571634d8);
+            
+        
+
+        poly_line_40dee61a2389a632525cde9a9bf2cce1.bindPopup(popup_57619c003aef3a02ac0df725babe1634)
+        ;
+
+        
+    
+    
+            var poly_line_de187bebf6c02423b1cf7b124fb39e5f = L.polyline(
+                [[10.952146, -74.78529], [10.95209, -74.785511], [10.951953, -74.785769], [10.951744, -74.785738], [10.951637, -74.785703], [10.951815, -74.784672], [10.951928, -74.783891], [10.952054, -74.783194], [10.952082, -74.783056], [10.952134, -74.782795], [10.952169, -74.782622], [10.952236, -74.782292], [10.952266, -74.782144], [10.952356, -74.781702], [10.952518, -74.780897], [10.952649, -74.780253], [10.952652, -74.780238], [10.952657, -74.780214], [10.952662, -74.780188], [10.952665, -74.780174], [10.952983, -74.778598], [10.953638, -74.778726], [10.953779, -74.77798]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_21c05e049cf583253df8f968eed5fefa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_476ecb7cc35a92404b7f76545e4ac5e5 = $(`<div id="html_476ecb7cc35a92404b7f76545e4ac5e5" style="width: 100.0%; height: 100.0%;">Cliente 46 → Cliente 52</div>`)[0];
+                popup_21c05e049cf583253df8f968eed5fefa.setContent(html_476ecb7cc35a92404b7f76545e4ac5e5);
+            
+        
+
+        poly_line_de187bebf6c02423b1cf7b124fb39e5f.bindPopup(popup_21c05e049cf583253df8f968eed5fefa)
+        ;
+
+        
+    
+    
+            var poly_line_da41d99ec5b81df9aecc6680df7b9c0e = L.polyline(
+                [[10.953779, -74.77798], [10.953638, -74.778726], [10.952983, -74.778598], [10.952361, -74.778458], [10.951663, -74.778308], [10.951011, -74.778161], [10.950365, -74.778028], [10.949689, -74.777886], [10.94901, -74.777743], [10.948328, -74.777624], [10.948238, -74.777639], [10.947657, -74.777901], [10.947447, -74.77748], [10.946812, -74.775954], [10.946799, -74.77592], [10.946751, -74.775941], [10.946356, -74.77611], [10.945969, -74.776276], [10.94552, -74.776469], [10.945115, -74.776643], [10.944838, -74.776761], [10.944722, -74.776811], [10.944092, -74.777081], [10.944003, -74.777119], [10.943446, -74.77736], [10.943032, -74.777538], [10.942222, -74.777881], [10.942145, -74.777916], [10.941828, -74.77805], [10.941749, -74.77808], [10.941608, -74.778145], [10.94145, -74.778202], [10.94133, -74.778259], [10.9409, -74.778448], [10.940474, -74.77863], [10.940198, -74.778747], [10.939777, -74.778929], [10.939356, -74.779109], [10.938961, -74.779278], [10.938532, -74.779464], [10.937895, -74.779739], [10.937461, -74.779921], [10.937454, -74.78001], [10.937223, -74.780838]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_51223edb2b83036237f0a9c05ad6abb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb3fa8b4a7db5fc39897a36e132df270 = $(`<div id="html_cb3fa8b4a7db5fc39897a36e132df270" style="width: 100.0%; height: 100.0%;">Cliente 52 → Cliente 15</div>`)[0];
+                popup_51223edb2b83036237f0a9c05ad6abb9.setContent(html_cb3fa8b4a7db5fc39897a36e132df270);
+            
+        
+
+        poly_line_da41d99ec5b81df9aecc6680df7b9c0e.bindPopup(popup_51223edb2b83036237f0a9c05ad6abb9)
+        ;
+
+        
+    
+    
+            var poly_line_1bfef9d03f0b1584151153f87adcf889 = L.polyline(
+                [[10.937223, -74.780838], [10.937027, -74.781538], [10.936956, -74.781777], [10.937345, -74.781889], [10.937401, -74.781905], [10.937547, -74.781946], [10.937689, -74.781987], [10.938169, -74.782124], [10.938366, -74.78218], [10.938865, -74.782322], [10.939057, -74.782377], [10.939448, -74.782489], [10.939692, -74.782558], [10.939737, -74.782571], [10.93971, -74.782785], [10.939717, -74.782839], [10.939913, -74.783428], [10.939992, -74.783692], [10.940013, -74.783761], [10.940011, -74.783856], [10.939894, -74.78429], [10.939708, -74.785422], [10.939686, -74.785558], [10.939573, -74.786373], [10.939463, -74.787165], [10.939456, -74.787223], [10.939438, -74.787348], [10.939388, -74.787753], [10.939372, -74.787871], [10.939335, -74.788211], [10.939324, -74.788302], [10.939274, -74.788669], [10.939771, -74.788735], [10.939743, -74.788928]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_ca2ba16a70c7bfa28665062a150d64f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebb0aefae890776a62e4700739647f72 = $(`<div id="html_ebb0aefae890776a62e4700739647f72" style="width: 100.0%; height: 100.0%;">Cliente 15 → Cliente 38</div>`)[0];
+                popup_ca2ba16a70c7bfa28665062a150d64f6.setContent(html_ebb0aefae890776a62e4700739647f72);
+            
+        
+
+        poly_line_1bfef9d03f0b1584151153f87adcf889.bindPopup(popup_ca2ba16a70c7bfa28665062a150d64f6)
+        ;
+
+        
+    
+    
+            var poly_line_68c526cb6a9e65fe507c0c4aaea2b1b5 = L.polyline(
+                [[10.939743, -74.788928], [10.9397, -74.789226], [10.939639, -74.789695], [10.939493, -74.790722], [10.939337, -74.791872], [10.939796, -74.791929], [10.940166, -74.791976], [10.940623, -74.792044], [10.941056, -74.792109], [10.94107, -74.792111]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_6ca9cd6d7688ad1e020cef84b6436be8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c7b0b4954f7aae279e64c4f43f9159c = $(`<div id="html_4c7b0b4954f7aae279e64c4f43f9159c" style="width: 100.0%; height: 100.0%;">Cliente 38 → Cliente 65</div>`)[0];
+                popup_6ca9cd6d7688ad1e020cef84b6436be8.setContent(html_4c7b0b4954f7aae279e64c4f43f9159c);
+            
+        
+
+        poly_line_68c526cb6a9e65fe507c0c4aaea2b1b5.bindPopup(popup_6ca9cd6d7688ad1e020cef84b6436be8)
+        ;
+
+        
+    
+    
+            var poly_line_3b9ad83577a3660bc91d118708387c26 = L.polyline(
+                [[10.94107, -74.792111], [10.941234, -74.792138], [10.941474, -74.792176], [10.941933, -74.792238], [10.941982, -74.791882], [10.942017, -74.791618], [10.94249, -74.791673], [10.942908, -74.791713], [10.942988, -74.791723], [10.943322, -74.791764], [10.943786, -74.791826], [10.944105, -74.791862]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_76cb6ed834c0f628ca3058c4428adf77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65ad2d78a4be011a920f868047aeeb63 = $(`<div id="html_65ad2d78a4be011a920f868047aeeb63" style="width: 100.0%; height: 100.0%;">Cliente 65 → Cliente 59</div>`)[0];
+                popup_76cb6ed834c0f628ca3058c4428adf77.setContent(html_65ad2d78a4be011a920f868047aeeb63);
+            
+        
+
+        poly_line_3b9ad83577a3660bc91d118708387c26.bindPopup(popup_76cb6ed834c0f628ca3058c4428adf77)
+        ;
+
+        
+    
+    
+            var poly_line_dbf72018ef9abe99ffe487018fd0df05 = L.polyline(
+                [[10.944105, -74.791862], [10.944254, -74.791879], [10.944691, -74.791941], [10.945128, -74.791992], [10.945568, -74.79204], [10.945698, -74.791035], [10.945719, -74.790799]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_c2f732afe6e8c389959425eeaf1686ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88b15347a23f38f1568612d00eed0921 = $(`<div id="html_88b15347a23f38f1568612d00eed0921" style="width: 100.0%; height: 100.0%;">Cliente 59 → Cliente 64</div>`)[0];
+                popup_c2f732afe6e8c389959425eeaf1686ee.setContent(html_88b15347a23f38f1568612d00eed0921);
+            
+        
+
+        poly_line_dbf72018ef9abe99ffe487018fd0df05.bindPopup(popup_c2f732afe6e8c389959425eeaf1686ee)
+        ;
+
+        
+    
+    
+            var poly_line_3af6b04966f065bd782967c5bbd2c8c6 = L.polyline(
+                [[10.945719, -74.790799], [10.945698, -74.791035], [10.945568, -74.79204], [10.945396, -74.793461], [10.945381, -74.794185], [10.945406, -74.795185], [10.945406, -74.795759], [10.944936, -74.796012], [10.944863, -74.796053], [10.944641, -74.79618]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_f115e7a53c2096a11bd97afdcfc91def = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee2adca5e6223728b16604548e7b9fd9 = $(`<div id="html_ee2adca5e6223728b16604548e7b9fd9" style="width: 100.0%; height: 100.0%;">Cliente 64 → Cliente 45</div>`)[0];
+                popup_f115e7a53c2096a11bd97afdcfc91def.setContent(html_ee2adca5e6223728b16604548e7b9fd9);
+            
+        
+
+        poly_line_3af6b04966f065bd782967c5bbd2c8c6.bindPopup(popup_f115e7a53c2096a11bd97afdcfc91def)
+        ;
+
+        
+    
+    
+            var poly_line_876e64dd016b74d504c27aa7ece9afea = L.polyline(
+                [[10.944641, -74.79618], [10.944504, -74.796259], [10.944174, -74.796215], [10.943725, -74.796158], [10.94326, -74.796093], [10.94276, -74.796026], [10.942327, -74.795968], [10.942149, -74.795944], [10.9419, -74.795887], [10.941438, -74.7958], [10.941185, -74.795771], [10.94103, -74.795756], [10.940985, -74.795751], [10.940585, -74.795714], [10.940525, -74.796201], [10.940067, -74.796134], [10.939627, -74.796066], [10.939214, -74.79602], [10.938767, -74.795958], [10.938297, -74.795887], [10.938223, -74.795878], [10.937617, -74.795688], [10.937048, -74.795536], [10.936442, -74.795359], [10.935705, -74.795141], [10.935683, -74.795136], [10.935514, -74.795095], [10.93545, -74.795079], [10.935162, -74.795009], [10.934806, -74.794922], [10.93394, -74.794707], [10.933718, -74.794708], [10.93366, -74.794449], [10.933657, -74.794436], [10.933576, -74.79417], [10.933462, -74.793837], [10.933234, -74.793922]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_bc92b483b4a7d20f9664a789dc0ed0c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68a80a3e3477f25e924623467bc96149 = $(`<div id="html_68a80a3e3477f25e924623467bc96149" style="width: 100.0%; height: 100.0%;">Cliente 45 → Cliente 62</div>`)[0];
+                popup_bc92b483b4a7d20f9664a789dc0ed0c4.setContent(html_68a80a3e3477f25e924623467bc96149);
+            
+        
+
+        poly_line_876e64dd016b74d504c27aa7ece9afea.bindPopup(popup_bc92b483b4a7d20f9664a789dc0ed0c4)
+        ;
+
+        
+    
+    
+            var poly_line_b337ca21aa5e8238e9659f59570c9962 = L.polyline(
+                [[10.933234, -74.793922], [10.933462, -74.793837], [10.934017, -74.793629], [10.934887, -74.793301], [10.934877, -74.792957], [10.934871, -74.792731], [10.934862, -74.792367], [10.934856, -74.7921], [10.934859, -74.791994], [10.934869, -74.79169], [10.934885, -74.791403], [10.934892, -74.791337], [10.934894, -74.791253], [10.934924, -74.791151], [10.934944, -74.791077], [10.93499, -74.790921], [10.935016, -74.790821], [10.935087, -74.790554], [10.935206, -74.790121], [10.935284, -74.789864], [10.935393, -74.789526], [10.93548, -74.789236], [10.935533, -74.789033], [10.935566, -74.788911], [10.935743, -74.7883], [10.93542, -74.788162], [10.934855, -74.788004], [10.934547, -74.787918], [10.934536, -74.787954], [10.934492, -74.788178], [10.93447, -74.788257]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_f106287cc838323a3a446333c860c790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cf28926b64b231c90d59b07b2204567 = $(`<div id="html_5cf28926b64b231c90d59b07b2204567" style="width: 100.0%; height: 100.0%;">Cliente 62 → Cliente 4</div>`)[0];
+                popup_f106287cc838323a3a446333c860c790.setContent(html_5cf28926b64b231c90d59b07b2204567);
+            
+        
+
+        poly_line_b337ca21aa5e8238e9659f59570c9962.bindPopup(popup_f106287cc838323a3a446333c860c790)
+        ;
+
+        
+    
+    
+            var poly_line_426c7da0d3c99355bffa93446afab1b1 = L.polyline(
+                [[10.93447, -74.788257], [10.934492, -74.788178], [10.934536, -74.787954], [10.934547, -74.787918], [10.934855, -74.788004], [10.93542, -74.788162], [10.935743, -74.7883], [10.935851, -74.78797], [10.935899, -74.787774], [10.935915, -74.787626], [10.935919, -74.787561], [10.935928, -74.787281], [10.935932, -74.787215], [10.935938, -74.786994], [10.935946, -74.78682], [10.935949, -74.78672], [10.935956, -74.786463], [10.935956, -74.786405], [10.935956, -74.786277], [10.93597, -74.786205], [10.936002, -74.786098], [10.936018, -74.786059], [10.936107, -74.785837], [10.936278, -74.78542], [10.936362, -74.785212], [10.936406, -74.785103], [10.936455, -74.784983], [10.936559, -74.784748], [10.936651, -74.784541], [10.936807, -74.784204], [10.936858, -74.7841], [10.936911, -74.784017], [10.936969, -74.783948], [10.937344, -74.783522], [10.937427, -74.783414], [10.937492, -74.783316], [10.937606, -74.783109], [10.937933, -74.782483], [10.937904, -74.782304], [10.937899, -74.782236], [10.93763, -74.782154], [10.937487, -74.782109], [10.937398, -74.782083], [10.937301, -74.78205], [10.936911, -74.781926], [10.936803, -74.781892], [10.936364, -74.781752], [10.936316, -74.781737], [10.936033, -74.781653], [10.935995, -74.78164], [10.935812, -74.781544], [10.935638, -74.781417], [10.935152, -74.781048], [10.935092, -74.781002], [10.935002, -74.780928], [10.934423, -74.78045], [10.934303, -74.780379], [10.934165, -74.780328], [10.933999, -74.780287], [10.933817, -74.780253], [10.933583, -74.780239], [10.933395, -74.780244], [10.933286, -74.780293], [10.933256, -74.780311], [10.933233, -74.780327], [10.933213, -74.780342], [10.933196, -74.780358], [10.93318, -74.780379], [10.933169, -74.7804], [10.933158, -74.780424], [10.93315, -74.780455], [10.933143, -74.780495], [10.933141, -74.780529], [10.933144, -74.780554], [10.933156, -74.780593], [10.933167, -74.78062], [10.933185, -74.780654], [10.933208, -74.780685], [10.933233, -74.780709], [10.933266, -74.780732], [10.933295, -74.780746], [10.933317, -74.780755], [10.933357, -74.780764], [10.933392, -74.780767], [10.933421, -74.780767], [10.933532, -74.780753], [10.93362, -74.780742], [10.93371, -74.780731], [10.933987, -74.780701], [10.93412, -74.780684], [10.935368, -74.780466], [10.935526, -74.78043], [10.935655, -74.780389], [10.935933, -74.780259], [10.936345, -74.780083], [10.936393, -74.780059], [10.936418, -74.780047], [10.93668, -74.779933], [10.936732, -74.77991], [10.936742, -74.779904], [10.937178, -74.779712], [10.937596, -74.779532], [10.937582, -74.7795], [10.937277, -74.778782], [10.936939, -74.777936], [10.936467, -74.776807], [10.936399, -74.776636], [10.936293, -74.776371], [10.936016, -74.775673], [10.935522, -74.774501], [10.93502, -74.773332], [10.934768, -74.772744], [10.934597, -74.77277], [10.934514, -74.772786], [10.934484, -74.772792], [10.934236, -74.772836], [10.933901, -74.772903], [10.933566, -74.772966], [10.933219, -74.773028], [10.932994, -74.77181], [10.932636, -74.771872], [10.932537, -74.771307]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_d4d1a356eda72227995532ffc06504a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_799d3f75cb16a3dbbcf587bacf4f0c02 = $(`<div id="html_799d3f75cb16a3dbbcf587bacf4f0c02" style="width: 100.0%; height: 100.0%;">Cliente 4 → Cliente 43</div>`)[0];
+                popup_d4d1a356eda72227995532ffc06504a6.setContent(html_799d3f75cb16a3dbbcf587bacf4f0c02);
+            
+        
+
+        poly_line_426c7da0d3c99355bffa93446afab1b1.bindPopup(popup_d4d1a356eda72227995532ffc06504a6)
+        ;
+
+        
+    
+    
+            var poly_line_3b4ca45c588e0a6c65d2a7135186d540 = L.polyline(
+                [[10.932537, -74.771307], [10.932636, -74.771872], [10.932994, -74.77181], [10.93334, -74.771755], [10.933679, -74.771688], [10.934016, -74.771631], [10.934266, -74.771586], [10.934632, -74.771525], [10.934835, -74.771494], [10.934953, -74.771476], [10.93531, -74.771338], [10.93559, -74.771217], [10.93589, -74.771087], [10.936559, -74.772688], [10.937057, -74.773864], [10.937342, -74.77374], [10.937635, -74.773608], [10.937929, -74.773483], [10.938222, -74.773357], [10.938524, -74.773227], [10.938753, -74.773128], [10.938809, -74.773074], [10.938826, -74.773113], [10.938897, -74.773267], [10.939289, -74.773468], [10.939552, -74.773605], [10.939841, -74.773754], [10.94012, -74.773902], [10.940509, -74.774109], [10.940797, -74.774257], [10.941103, -74.774421], [10.941365, -74.774564], [10.941411, -74.77459], [10.941625, -74.77475], [10.941892, -74.774933], [10.942002, -74.77501], [10.942188, -74.775133], [10.94232, -74.77522], [10.942623, -74.775418], [10.942742, -74.775542], [10.942888, -74.775694], [10.942953, -74.775762], [10.942976, -74.775786], [10.94306, -74.775873], [10.943151, -74.775976], [10.943387, -74.776156], [10.943468, -74.776252], [10.943534, -74.776372], [10.943735, -74.776876], [10.943744, -74.776899], [10.943752, -74.776916], [10.943894, -74.776856], [10.944173, -74.776739], [10.944574, -74.776569], [10.945007, -74.776386], [10.945205, -74.776295], [10.945408, -74.776202], [10.94584, -74.776013], [10.946255, -74.775832], [10.94664, -74.775664], [10.946691, -74.775642], [10.946799, -74.77592], [10.946812, -74.775954], [10.947447, -74.77748], [10.947657, -74.777901], [10.948238, -74.777639], [10.948328, -74.777624], [10.94901, -74.777743], [10.949689, -74.777886], [10.950365, -74.778028], [10.951011, -74.778161], [10.951663, -74.778308], [10.952361, -74.778458], [10.952983, -74.778598], [10.953638, -74.778726], [10.954352, -74.778901], [10.955036, -74.779051], [10.955711, -74.779189], [10.956361, -74.779329], [10.956998, -74.779459], [10.95668, -74.781051], [10.956441, -74.782267], [10.956281, -74.783091], [10.956315, -74.78356], [10.956338, -74.783879], [10.95637, -74.784059], [10.956626, -74.785522], [10.956657, -74.785666], [10.956704, -74.785831], [10.956721, -74.785891], [10.956765, -74.786024], [10.956557, -74.7861], [10.956245, -74.786207], [10.956078, -74.786261], [10.955946, -74.786309], [10.955605, -74.786422]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_af59c8838c6adf4d87a712592feb55d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abe63544e76d13847377014d9468c645 = $(`<div id="html_abe63544e76d13847377014d9468c645" style="width: 100.0%; height: 100.0%;">Cliente 43 → Bodega Transportador</div>`)[0];
+                popup_af59c8838c6adf4d87a712592feb55d0.setContent(html_abe63544e76d13847377014d9468c645);
+            
+        
+
+        poly_line_3b4ca45c588e0a6c65d2a7135186d540.bindPopup(popup_af59c8838c6adf4d87a712592feb55d0)
+        ;
+
+        
+    
+    
+            var marker_a07b926aac14ce2e044ad71bb33b8af0 = L.marker(
+                [10.955619, -74.786465],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_0779e1a0bd0594cd2e6506ec031ac81a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2581a4f76060f76b51e746056363ee70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2cdeb26e1d0f3d937daf2ea2fa1a93b = $(`<div id="html_d2cdeb26e1d0f3d937daf2ea2fa1a93b" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 1 de 13</b><br>             <b>Nombre:</b> Bodega Transportador<br>             <b>Coordenadas:</b> (10.955619, -74.786465)<br>             <b>Tipo:</b> Salida - Depósito<br>             <b>Masa:</b> 0.0 kg             </div>`)[0];
+                popup_2581a4f76060f76b51e746056363ee70.setContent(html_d2cdeb26e1d0f3d937daf2ea2fa1a93b);
+            
+        
+
+        marker_a07b926aac14ce2e044ad71bb33b8af0.bindPopup(popup_2581a4f76060f76b51e746056363ee70)
+        ;
+
+        
+    
+    
+            marker_a07b926aac14ce2e044ad71bb33b8af0.bindTooltip(
+                `<div>
+                     Punto 1: Bodega Transportador
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a07b926aac14ce2e044ad71bb33b8af0.setIcon(icon_0779e1a0bd0594cd2e6506ec031ac81a);
+            
+    
+            var circle_marker_7a58c7a9cb7c4b2596a7b0917189b0ef = L.circleMarker(
+                [10.955619, -74.786465],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_66c9b132668bef2343b82df57c768179 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b9f135b2b70f3ccd7bdee84fd7c6944 = $(`<div id="html_1b9f135b2b70f3ccd7bdee84fd7c6944" style="width: 100.0%; height: 100.0%;">Orden: 1</div>`)[0];
+                popup_66c9b132668bef2343b82df57c768179.setContent(html_1b9f135b2b70f3ccd7bdee84fd7c6944);
+            
+        
+
+        circle_marker_7a58c7a9cb7c4b2596a7b0917189b0ef.bindPopup(popup_66c9b132668bef2343b82df57c768179)
+        ;
+
+        
+    
+    
+            var marker_84969340143b84502092be131cc65143 = L.marker(
+                [10.955619, -74.786465],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_4aaf127ee4529739a503a9068a629818 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: green; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e1\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_84969340143b84502092be131cc65143.setIcon(div_icon_4aaf127ee4529739a503a9068a629818);
+            
+    
+            var marker_efba2cc210c429248070d5e1c0bfb83c = L.marker(
+                [10.952188, -74.785301],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_d01def3836405303adfd3db6fe8b6283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8eac4f022d288aee6ebc00ef1b4885c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_943699a22a8398726a26d97368e1c11c = $(`<div id="html_943699a22a8398726a26d97368e1c11c" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 2 de 13</b><br>             <b>Nombre:</b> Cliente 46<br>             <b>Coordenadas:</b> (10.952188, -74.785301)<br>             <b>Tipo:</b> Cliente (Masa: 60.0 kg)<br>             <b>Masa:</b> 60.0 kg             </div>`)[0];
+                popup_d8eac4f022d288aee6ebc00ef1b4885c.setContent(html_943699a22a8398726a26d97368e1c11c);
+            
+        
+
+        marker_efba2cc210c429248070d5e1c0bfb83c.bindPopup(popup_d8eac4f022d288aee6ebc00ef1b4885c)
+        ;
+
+        
+    
+    
+            marker_efba2cc210c429248070d5e1c0bfb83c.bindTooltip(
+                `<div>
+                     Punto 2: Cliente 46
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efba2cc210c429248070d5e1c0bfb83c.setIcon(icon_d01def3836405303adfd3db6fe8b6283);
+            
+    
+            var circle_marker_ef2bcdc8782f9474c625e89a9ac4dfbd = L.circleMarker(
+                [10.952188, -74.785301],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_12a80f98539b9592f24bc1d7daf6bdbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f615601b6344fea0407da01786ea5b56 = $(`<div id="html_f615601b6344fea0407da01786ea5b56" style="width: 100.0%; height: 100.0%;">Orden: 2</div>`)[0];
+                popup_12a80f98539b9592f24bc1d7daf6bdbf.setContent(html_f615601b6344fea0407da01786ea5b56);
+            
+        
+
+        circle_marker_ef2bcdc8782f9474c625e89a9ac4dfbd.bindPopup(popup_12a80f98539b9592f24bc1d7daf6bdbf)
+        ;
+
+        
+    
+    
+            var marker_5ed46cc81b66f67463055d114199680a = L.marker(
+                [10.952188, -74.785301],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_1cf93346260fa8e95f1177b8e1199183 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e2\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_5ed46cc81b66f67463055d114199680a.setIcon(div_icon_1cf93346260fa8e95f1177b8e1199183);
+            
+    
+            var marker_1eca81f01d2867475675043ff8694e57 = L.marker(
+                [10.953794, -74.777983],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_294e2e479f4c012b3017deb44b04e6b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f92b0f63ffe68784d6e3d6edf0b2786 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f19fbf00d6fec1734cbfc0d1ab299172 = $(`<div id="html_f19fbf00d6fec1734cbfc0d1ab299172" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 3 de 13</b><br>             <b>Nombre:</b> Cliente 52<br>             <b>Coordenadas:</b> (10.953794, -74.777983)<br>             <b>Tipo:</b> Cliente (Masa: 76.0 kg)<br>             <b>Masa:</b> 76.0 kg             </div>`)[0];
+                popup_5f92b0f63ffe68784d6e3d6edf0b2786.setContent(html_f19fbf00d6fec1734cbfc0d1ab299172);
+            
+        
+
+        marker_1eca81f01d2867475675043ff8694e57.bindPopup(popup_5f92b0f63ffe68784d6e3d6edf0b2786)
+        ;
+
+        
+    
+    
+            marker_1eca81f01d2867475675043ff8694e57.bindTooltip(
+                `<div>
+                     Punto 3: Cliente 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1eca81f01d2867475675043ff8694e57.setIcon(icon_294e2e479f4c012b3017deb44b04e6b9);
+            
+    
+            var circle_marker_dd904d339a85d3c84a75299922596803 = L.circleMarker(
+                [10.953794, -74.777983],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_96004f7150053d4d74a8f0f37e9d7767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab48d34185048791f66d87dd0f5b7d4e = $(`<div id="html_ab48d34185048791f66d87dd0f5b7d4e" style="width: 100.0%; height: 100.0%;">Orden: 3</div>`)[0];
+                popup_96004f7150053d4d74a8f0f37e9d7767.setContent(html_ab48d34185048791f66d87dd0f5b7d4e);
+            
+        
+
+        circle_marker_dd904d339a85d3c84a75299922596803.bindPopup(popup_96004f7150053d4d74a8f0f37e9d7767)
+        ;
+
+        
+    
+    
+            var marker_87aa2666c10c3ea14e0bb7db8d5064b8 = L.marker(
+                [10.953794, -74.777983],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_da2bc66b2848e6cf119bfbb89532f35c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e3\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_87aa2666c10c3ea14e0bb7db8d5064b8.setIcon(div_icon_da2bc66b2848e6cf119bfbb89532f35c);
+            
+    
+            var marker_8af4a1cd8da709f165e2752fda8eba9c = L.marker(
+                [10.93716, -74.78082],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_0cfa4ea29a4584bfc824d64b91e680a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b3e7f476f904de6ccbab1b917445a17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70f11e1a190912f320aeebca281983d1 = $(`<div id="html_70f11e1a190912f320aeebca281983d1" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 4 de 13</b><br>             <b>Nombre:</b> Cliente 15<br>             <b>Coordenadas:</b> (10.937160, -74.780820)<br>             <b>Tipo:</b> Cliente (Masa: 44.0 kg)<br>             <b>Masa:</b> 44.0 kg             </div>`)[0];
+                popup_0b3e7f476f904de6ccbab1b917445a17.setContent(html_70f11e1a190912f320aeebca281983d1);
+            
+        
+
+        marker_8af4a1cd8da709f165e2752fda8eba9c.bindPopup(popup_0b3e7f476f904de6ccbab1b917445a17)
+        ;
+
+        
+    
+    
+            marker_8af4a1cd8da709f165e2752fda8eba9c.bindTooltip(
+                `<div>
+                     Punto 4: Cliente 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8af4a1cd8da709f165e2752fda8eba9c.setIcon(icon_0cfa4ea29a4584bfc824d64b91e680a6);
+            
+    
+            var circle_marker_401294f4cc236d79271ae7ad2bf2c939 = L.circleMarker(
+                [10.93716, -74.78082],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_dced986741e30d0105f01d763cc27021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adcbc04afd5a04ac4485eec2bf9308e0 = $(`<div id="html_adcbc04afd5a04ac4485eec2bf9308e0" style="width: 100.0%; height: 100.0%;">Orden: 4</div>`)[0];
+                popup_dced986741e30d0105f01d763cc27021.setContent(html_adcbc04afd5a04ac4485eec2bf9308e0);
+            
+        
+
+        circle_marker_401294f4cc236d79271ae7ad2bf2c939.bindPopup(popup_dced986741e30d0105f01d763cc27021)
+        ;
+
+        
+    
+    
+            var marker_acf6d9708664fa481708a01fb734867a = L.marker(
+                [10.93716, -74.78082],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_0f916bfefc06a5ec5c3bdcd55fc5e893 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e4\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_acf6d9708664fa481708a01fb734867a.setIcon(div_icon_0f916bfefc06a5ec5c3bdcd55fc5e893);
+            
+    
+            var marker_eb9c61c1f5d2ba3d6d18d5c7749667fe = L.marker(
+                [10.939758, -74.78893],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_fd51f85dd33aeea8bd108dc0b4f44994 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0f2a125f188f1f621b85eb014b0eeba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef951aa39f38d4d1ce86800c6dbf1029 = $(`<div id="html_ef951aa39f38d4d1ce86800c6dbf1029" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 5 de 13</b><br>             <b>Nombre:</b> Cliente 38<br>             <b>Coordenadas:</b> (10.939758, -74.788930)<br>             <b>Tipo:</b> Cliente (Masa: 40.0 kg)<br>             <b>Masa:</b> 40.0 kg             </div>`)[0];
+                popup_c0f2a125f188f1f621b85eb014b0eeba.setContent(html_ef951aa39f38d4d1ce86800c6dbf1029);
+            
+        
+
+        marker_eb9c61c1f5d2ba3d6d18d5c7749667fe.bindPopup(popup_c0f2a125f188f1f621b85eb014b0eeba)
+        ;
+
+        
+    
+    
+            marker_eb9c61c1f5d2ba3d6d18d5c7749667fe.bindTooltip(
+                `<div>
+                     Punto 5: Cliente 38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb9c61c1f5d2ba3d6d18d5c7749667fe.setIcon(icon_fd51f85dd33aeea8bd108dc0b4f44994);
+            
+    
+            var circle_marker_fddc070fb75176c58ef0e7d3efd7028a = L.circleMarker(
+                [10.939758, -74.78893],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_6a3724e1cd171898c3bbe5174861e2e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5699006a7102d9021e08679fe0faee29 = $(`<div id="html_5699006a7102d9021e08679fe0faee29" style="width: 100.0%; height: 100.0%;">Orden: 5</div>`)[0];
+                popup_6a3724e1cd171898c3bbe5174861e2e3.setContent(html_5699006a7102d9021e08679fe0faee29);
+            
+        
+
+        circle_marker_fddc070fb75176c58ef0e7d3efd7028a.bindPopup(popup_6a3724e1cd171898c3bbe5174861e2e3)
+        ;
+
+        
+    
+    
+            var marker_df1b6d86290000226f98552d1a24f529 = L.marker(
+                [10.939758, -74.78893],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_b10f891ae51e3d7e40c1d292cbb2fa7b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e5\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_df1b6d86290000226f98552d1a24f529.setIcon(div_icon_b10f891ae51e3d7e40c1d292cbb2fa7b);
+            
+    
+            var marker_e1c3964725f158006ede22272f528ff9 = L.marker(
+                [10.941114, -74.791833],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_de2f9f4a0ec27260d82d1917517ebbda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74caa98add30bcc39e182205b4c3c6f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b46d6319c760ffc9a0f6e8a440851e9d = $(`<div id="html_b46d6319c760ffc9a0f6e8a440851e9d" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 6 de 13</b><br>             <b>Nombre:</b> Cliente 65<br>             <b>Coordenadas:</b> (10.941114, -74.791833)<br>             <b>Tipo:</b> Cliente (Masa: 76.0 kg)<br>             <b>Masa:</b> 76.0 kg             </div>`)[0];
+                popup_74caa98add30bcc39e182205b4c3c6f0.setContent(html_b46d6319c760ffc9a0f6e8a440851e9d);
+            
+        
+
+        marker_e1c3964725f158006ede22272f528ff9.bindPopup(popup_74caa98add30bcc39e182205b4c3c6f0)
+        ;
+
+        
+    
+    
+            marker_e1c3964725f158006ede22272f528ff9.bindTooltip(
+                `<div>
+                     Punto 6: Cliente 65
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1c3964725f158006ede22272f528ff9.setIcon(icon_de2f9f4a0ec27260d82d1917517ebbda);
+            
+    
+            var circle_marker_9bc3b4da64bd7db791c20b60ba2ee7b4 = L.circleMarker(
+                [10.941114, -74.791833],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_644053ff9c316838204cc523f745a349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90e6b59503a35ecac7a0e64b13be6b31 = $(`<div id="html_90e6b59503a35ecac7a0e64b13be6b31" style="width: 100.0%; height: 100.0%;">Orden: 6</div>`)[0];
+                popup_644053ff9c316838204cc523f745a349.setContent(html_90e6b59503a35ecac7a0e64b13be6b31);
+            
+        
+
+        circle_marker_9bc3b4da64bd7db791c20b60ba2ee7b4.bindPopup(popup_644053ff9c316838204cc523f745a349)
+        ;
+
+        
+    
+    
+            var marker_01aa2b1e43ce4e6186bf2da8f4ecb9bc = L.marker(
+                [10.941114, -74.791833],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_f16200f45717fbe007f2c8900b2cc62c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e6\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_01aa2b1e43ce4e6186bf2da8f4ecb9bc.setIcon(div_icon_f16200f45717fbe007f2c8900b2cc62c);
+            
+    
+            var marker_c7e1781bbce2c839ba318bcf3c6d6ba8 = L.marker(
+                [10.944116, -74.791759],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_ffbf8398dabbd3a8d33caf6c31b847cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18117cbc92f3034dc8579aeae83eb36b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_181e4d0a118c3f97d19bd068153252af = $(`<div id="html_181e4d0a118c3f97d19bd068153252af" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 7 de 13</b><br>             <b>Nombre:</b> Cliente 59<br>             <b>Coordenadas:</b> (10.944116, -74.791759)<br>             <b>Tipo:</b> Cliente (Masa: 78.0 kg)<br>             <b>Masa:</b> 78.0 kg             </div>`)[0];
+                popup_18117cbc92f3034dc8579aeae83eb36b.setContent(html_181e4d0a118c3f97d19bd068153252af);
+            
+        
+
+        marker_c7e1781bbce2c839ba318bcf3c6d6ba8.bindPopup(popup_18117cbc92f3034dc8579aeae83eb36b)
+        ;
+
+        
+    
+    
+            marker_c7e1781bbce2c839ba318bcf3c6d6ba8.bindTooltip(
+                `<div>
+                     Punto 7: Cliente 59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7e1781bbce2c839ba318bcf3c6d6ba8.setIcon(icon_ffbf8398dabbd3a8d33caf6c31b847cf);
+            
+    
+            var circle_marker_8a897c1d5ff635e3dc26a45f1dfc5384 = L.circleMarker(
+                [10.944116, -74.791759],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_7dda51da05576fd5d8e25596d124b876 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2ccec2fe9b763e6eec944b12b66761b = $(`<div id="html_b2ccec2fe9b763e6eec944b12b66761b" style="width: 100.0%; height: 100.0%;">Orden: 7</div>`)[0];
+                popup_7dda51da05576fd5d8e25596d124b876.setContent(html_b2ccec2fe9b763e6eec944b12b66761b);
+            
+        
+
+        circle_marker_8a897c1d5ff635e3dc26a45f1dfc5384.bindPopup(popup_7dda51da05576fd5d8e25596d124b876)
+        ;
+
+        
+    
+    
+            var marker_5c51085c04f85da84e064edc6aaca06b = L.marker(
+                [10.944116, -74.791759],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_9a4d002594e82e74606eb36f13678b1d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e7\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_5c51085c04f85da84e064edc6aaca06b.setIcon(div_icon_9a4d002594e82e74606eb36f13678b1d);
+            
+    
+            var marker_5dc5b9dd838691661282f91e440e87ca = L.marker(
+                [10.945665, -74.790794],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_3b142a25dd83e3d879d8beda792d2a03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51c6503a81a0c40832f1a4bc90f05938 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4007eb7fc6c03866fc73ef052d01dc8 = $(`<div id="html_f4007eb7fc6c03866fc73ef052d01dc8" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 8 de 13</b><br>             <b>Nombre:</b> Cliente 64<br>             <b>Coordenadas:</b> (10.945665, -74.790794)<br>             <b>Tipo:</b> Cliente (Masa: 80.0 kg)<br>             <b>Masa:</b> 80.0 kg             </div>`)[0];
+                popup_51c6503a81a0c40832f1a4bc90f05938.setContent(html_f4007eb7fc6c03866fc73ef052d01dc8);
+            
+        
+
+        marker_5dc5b9dd838691661282f91e440e87ca.bindPopup(popup_51c6503a81a0c40832f1a4bc90f05938)
+        ;
+
+        
+    
+    
+            marker_5dc5b9dd838691661282f91e440e87ca.bindTooltip(
+                `<div>
+                     Punto 8: Cliente 64
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5dc5b9dd838691661282f91e440e87ca.setIcon(icon_3b142a25dd83e3d879d8beda792d2a03);
+            
+    
+            var circle_marker_84c77f3d7a8afbdc614c5910d5cafc8b = L.circleMarker(
+                [10.945665, -74.790794],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_35c9d599674c51cc8a729ab840401e75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47bc21a5daf94321901c399014c13099 = $(`<div id="html_47bc21a5daf94321901c399014c13099" style="width: 100.0%; height: 100.0%;">Orden: 8</div>`)[0];
+                popup_35c9d599674c51cc8a729ab840401e75.setContent(html_47bc21a5daf94321901c399014c13099);
+            
+        
+
+        circle_marker_84c77f3d7a8afbdc614c5910d5cafc8b.bindPopup(popup_35c9d599674c51cc8a729ab840401e75)
+        ;
+
+        
+    
+    
+            var marker_92a97ee841e5980a0c02f5437aa748b7 = L.marker(
+                [10.945665, -74.790794],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_fa2b0643bcad6d511244411527cd63f6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e8\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_92a97ee841e5980a0c02f5437aa748b7.setIcon(div_icon_fa2b0643bcad6d511244411527cd63f6);
+            
+    
+            var marker_f632570c0eebde273feebd291fecd87f = L.marker(
+                [10.944633, -74.796165],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_5f9afcada4371939db851c7c770ac365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db8c98cbcbe28fb5446460913b3b173f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69f386e2ceb57c173cb51c04de0748bd = $(`<div id="html_69f386e2ceb57c173cb51c04de0748bd" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 9 de 13</b><br>             <b>Nombre:</b> Cliente 45<br>             <b>Coordenadas:</b> (10.944633, -74.796165)<br>             <b>Tipo:</b> Cliente (Masa: 47.0 kg)<br>             <b>Masa:</b> 47.0 kg             </div>`)[0];
+                popup_db8c98cbcbe28fb5446460913b3b173f.setContent(html_69f386e2ceb57c173cb51c04de0748bd);
+            
+        
+
+        marker_f632570c0eebde273feebd291fecd87f.bindPopup(popup_db8c98cbcbe28fb5446460913b3b173f)
+        ;
+
+        
+    
+    
+            marker_f632570c0eebde273feebd291fecd87f.bindTooltip(
+                `<div>
+                     Punto 9: Cliente 45
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f632570c0eebde273feebd291fecd87f.setIcon(icon_5f9afcada4371939db851c7c770ac365);
+            
+    
+            var circle_marker_dc27c8e8d5cca44d826e6dd9d1ad90f4 = L.circleMarker(
+                [10.944633, -74.796165],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_0007f8125a768a3e9ddf7fd4b0f599a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74fde7b0a327124b8b50c8faa2c75854 = $(`<div id="html_74fde7b0a327124b8b50c8faa2c75854" style="width: 100.0%; height: 100.0%;">Orden: 9</div>`)[0];
+                popup_0007f8125a768a3e9ddf7fd4b0f599a9.setContent(html_74fde7b0a327124b8b50c8faa2c75854);
+            
+        
+
+        circle_marker_dc27c8e8d5cca44d826e6dd9d1ad90f4.bindPopup(popup_0007f8125a768a3e9ddf7fd4b0f599a9)
+        ;
+
+        
+    
+    
+            var marker_89b406c48b3f971db18a762f5cdcc3ef = L.marker(
+                [10.944633, -74.796165],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_0f9f1de3c45bb496b17a2e0223453bc4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e9\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_89b406c48b3f971db18a762f5cdcc3ef.setIcon(div_icon_0f9f1de3c45bb496b17a2e0223453bc4);
+            
+    
+            var marker_e4e3d2bc69a27e7eb4529a8e1e52eee2 = L.marker(
+                [10.93327, -74.794022],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_588d4a381adf294391d85e97781daefd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97474fec4b4bf8f1a15339f6a70d0bf1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30facbf95162de1ea5c84420fa90f8f1 = $(`<div id="html_30facbf95162de1ea5c84420fa90f8f1" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 10 de 13</b><br>             <b>Nombre:</b> Cliente 62<br>             <b>Coordenadas:</b> (10.933270, -74.794022)<br>             <b>Tipo:</b> Cliente (Masa: 83.0 kg)<br>             <b>Masa:</b> 83.0 kg             </div>`)[0];
+                popup_97474fec4b4bf8f1a15339f6a70d0bf1.setContent(html_30facbf95162de1ea5c84420fa90f8f1);
+            
+        
+
+        marker_e4e3d2bc69a27e7eb4529a8e1e52eee2.bindPopup(popup_97474fec4b4bf8f1a15339f6a70d0bf1)
+        ;
+
+        
+    
+    
+            marker_e4e3d2bc69a27e7eb4529a8e1e52eee2.bindTooltip(
+                `<div>
+                     Punto 10: Cliente 62
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4e3d2bc69a27e7eb4529a8e1e52eee2.setIcon(icon_588d4a381adf294391d85e97781daefd);
+            
+    
+            var circle_marker_216b2ae4bcff564c4c7a692fdd61231b = L.circleMarker(
+                [10.93327, -74.794022],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_a9bed816f45ae012dc7dde41e5ce2739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_416c37edd95ff1c321fc64941fc53a08 = $(`<div id="html_416c37edd95ff1c321fc64941fc53a08" style="width: 100.0%; height: 100.0%;">Orden: 10</div>`)[0];
+                popup_a9bed816f45ae012dc7dde41e5ce2739.setContent(html_416c37edd95ff1c321fc64941fc53a08);
+            
+        
+
+        circle_marker_216b2ae4bcff564c4c7a692fdd61231b.bindPopup(popup_a9bed816f45ae012dc7dde41e5ce2739)
+        ;
+
+        
+    
+    
+            var marker_2a973c49bb2a109f9e89b85eac97c395 = L.marker(
+                [10.93327, -74.794022],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_5e1da76dba427eca64fccad900e61291 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e10\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_2a973c49bb2a109f9e89b85eac97c395.setIcon(div_icon_5e1da76dba427eca64fccad900e61291);
+            
+    
+            var marker_505223ebe14463d05f746a9629d7a68c = L.marker(
+                [10.934362, -74.788225],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_1844250354bd807f1e11d1f55300a246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e9a6e5e4fcdf4c4e3f93d72427de4e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b19f2b3180cd70d287656ca7f2460315 = $(`<div id="html_b19f2b3180cd70d287656ca7f2460315" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 11 de 13</b><br>             <b>Nombre:</b> Cliente 4<br>             <b>Coordenadas:</b> (10.934362, -74.788225)<br>             <b>Tipo:</b> Cliente (Masa: 74.0 kg)<br>             <b>Masa:</b> 74.0 kg             </div>`)[0];
+                popup_8e9a6e5e4fcdf4c4e3f93d72427de4e9.setContent(html_b19f2b3180cd70d287656ca7f2460315);
+            
+        
+
+        marker_505223ebe14463d05f746a9629d7a68c.bindPopup(popup_8e9a6e5e4fcdf4c4e3f93d72427de4e9)
+        ;
+
+        
+    
+    
+            marker_505223ebe14463d05f746a9629d7a68c.bindTooltip(
+                `<div>
+                     Punto 11: Cliente 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_505223ebe14463d05f746a9629d7a68c.setIcon(icon_1844250354bd807f1e11d1f55300a246);
+            
+    
+            var circle_marker_20cf7006d694310e7ce2f8d8642004f8 = L.circleMarker(
+                [10.934362, -74.788225],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_ac21354b9a82df216abb30395d17bc80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fa440f52be1ef8e22dbb7abef52b9a9 = $(`<div id="html_0fa440f52be1ef8e22dbb7abef52b9a9" style="width: 100.0%; height: 100.0%;">Orden: 11</div>`)[0];
+                popup_ac21354b9a82df216abb30395d17bc80.setContent(html_0fa440f52be1ef8e22dbb7abef52b9a9);
+            
+        
+
+        circle_marker_20cf7006d694310e7ce2f8d8642004f8.bindPopup(popup_ac21354b9a82df216abb30395d17bc80)
+        ;
+
+        
+    
+    
+            var marker_0a7e89f75d3122d4ebebb9dab348c290 = L.marker(
+                [10.934362, -74.788225],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_a246e00de73846f992fde88b64f105ba = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e11\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_0a7e89f75d3122d4ebebb9dab348c290.setIcon(div_icon_a246e00de73846f992fde88b64f105ba);
+            
+    
+            var marker_5cbd6dd21c3a14619a43f98f0be121b5 = L.marker(
+                [10.932593, -74.771297],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_ae69e63d30481770e2f7113965cca795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d90bb810b802fe07e77f6217c6eca63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ab580760459d94bc199caca771f79bc = $(`<div id="html_9ab580760459d94bc199caca771f79bc" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 12 de 13</b><br>             <b>Nombre:</b> Cliente 43<br>             <b>Coordenadas:</b> (10.932593, -74.771297)<br>             <b>Tipo:</b> Cliente (Masa: 85.0 kg)<br>             <b>Masa:</b> 85.0 kg             </div>`)[0];
+                popup_6d90bb810b802fe07e77f6217c6eca63.setContent(html_9ab580760459d94bc199caca771f79bc);
+            
+        
+
+        marker_5cbd6dd21c3a14619a43f98f0be121b5.bindPopup(popup_6d90bb810b802fe07e77f6217c6eca63)
+        ;
+
+        
+    
+    
+            marker_5cbd6dd21c3a14619a43f98f0be121b5.bindTooltip(
+                `<div>
+                     Punto 12: Cliente 43
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cbd6dd21c3a14619a43f98f0be121b5.setIcon(icon_ae69e63d30481770e2f7113965cca795);
+            
+    
+            var circle_marker_2ba1b07efe3977a62f8e6f1d782804fd = L.circleMarker(
+                [10.932593, -74.771297],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_78e553055237b8bc56e411302cf08255 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e06d63be03a873f1c1910530d705583b = $(`<div id="html_e06d63be03a873f1c1910530d705583b" style="width: 100.0%; height: 100.0%;">Orden: 12</div>`)[0];
+                popup_78e553055237b8bc56e411302cf08255.setContent(html_e06d63be03a873f1c1910530d705583b);
+            
+        
+
+        circle_marker_2ba1b07efe3977a62f8e6f1d782804fd.bindPopup(popup_78e553055237b8bc56e411302cf08255)
+        ;
+
+        
+    
+    
+            var marker_a17f8c282097ea1b16e0692a560e84d1 = L.marker(
+                [10.932593, -74.771297],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_7999b222dbee9bb710518f9ae981e442 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: blue; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e12\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_a17f8c282097ea1b16e0692a560e84d1.setIcon(div_icon_7999b222dbee9bb710518f9ae981e442);
+            
+    
+            var marker_9a526e46d1875ade0aa77f481d12035f = L.marker(
+                [10.955619, -74.786465],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var icon_d49bf8fb5e117596377803cf41249795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fff16f9b56218623986f8b9658869da9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2be1d701666c138359afc6330a474486 = $(`<div id="html_2be1d701666c138359afc6330a474486" style="width: 100.0%; height: 100.0%;">             <b>Viaje 1 - Punto 13 de 13</b><br>             <b>Nombre:</b> Bodega Transportador<br>             <b>Coordenadas:</b> (10.955619, -74.786465)<br>             <b>Tipo:</b> Regreso - Depósito<br>             <b>Masa:</b> 0.0 kg             </div>`)[0];
+                popup_fff16f9b56218623986f8b9658869da9.setContent(html_2be1d701666c138359afc6330a474486);
+            
+        
+
+        marker_9a526e46d1875ade0aa77f481d12035f.bindPopup(popup_fff16f9b56218623986f8b9658869da9)
+        ;
+
+        
+    
+    
+            marker_9a526e46d1875ade0aa77f481d12035f.bindTooltip(
+                `<div>
+                     Punto 13: Bodega Transportador
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a526e46d1875ade0aa77f481d12035f.setIcon(icon_d49bf8fb5e117596377803cf41249795);
+            
+    
+            var circle_marker_77df63471370638f2487b828af6fd381 = L.circleMarker(
+                [10.955619, -74.786465],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+        var popup_a64cb400d206193cda9a9754f761e9cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef1f0b4a66eb0ee6aaf84099dc6cf687 = $(`<div id="html_ef1f0b4a66eb0ee6aaf84099dc6cf687" style="width: 100.0%; height: 100.0%;">Orden: 13</div>`)[0];
+                popup_a64cb400d206193cda9a9754f761e9cf.setContent(html_ef1f0b4a66eb0ee6aaf84099dc6cf687);
+            
+        
+
+        circle_marker_77df63471370638f2487b828af6fd381.bindPopup(popup_a64cb400d206193cda9a9754f761e9cf)
+        ;
+
+        
+    
+    
+            var marker_6abd3bc5e401ead7863d65e8cc180d6b = L.marker(
+                [10.955619, -74.786465],
+                {
+}
+            ).addTo(map_99c011de143313772340a9f52e73ce11);
+        
+    
+            var div_icon_8beafe328d568ea7ae91dd2089a6a127 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 14px; font-weight: bold; color: white; text-align: center; background-color: red; border-radius: 50%; width: 25px; height: 25px; line-height: 25px;\"\u003e13\u003c/div\u003e",
+  "iconSize": [25, 25],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+                marker_6abd3bc5e401ead7863d65e8cc180d6b.setIcon(div_icon_8beafe328d568ea7ae91dd2089a6a127);
+            
+</script>
+</html>
